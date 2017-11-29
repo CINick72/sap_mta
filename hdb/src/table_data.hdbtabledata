@@ -1,0 +1,29 @@
+{
+     "format_version": 1,
+     "imports": [
+        {
+         "column_mappings" : {
+             "id" : 1, 
+             "descr" : 2 
+         },
+         "import_settings" : {
+             "import_columns" : [
+                 "id",
+                 "descr"
+             ]
+         },
+         "source_data" : { 
+             "data_type" : "CSV", 
+             "file_name" : "data.csv", 
+             "has_header" : false,
+             "no_data_import": false,
+             "delete_existing_foreign_data": true,
+             "dialect"   : "HANA", 
+             "type_config" : { 
+                 "delimiter" : "," 
+             }
+         }, 
+         "target_table" : "model.SomeTable"  
+        }
+     ] 
+}

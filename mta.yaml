@@ -7,12 +7,12 @@ modules:
     path: hdb
     requires:
       - name: hdi_hdb
+
 resources:
   - name: hdi_hdb
     properties:
-      hdi-container-name: hana_db
+      hdi-container-name: '${service-name}'
     type: com.sap.xs.hdi-container
     parameters:
       service-name: hana_db
-      config:
-        schema: jl
+
