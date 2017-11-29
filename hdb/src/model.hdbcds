@@ -1,0 +1,11 @@
+context model {
+
+    /*@@layout{"layoutInfo":{"x":111,"y":70.5}}*/
+    entity SomeTable {
+        key id    : Integer not null;
+            descr : String(40);
+    }
+    technical configuration {
+        row store;
+    };
+};

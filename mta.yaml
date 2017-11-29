@@ -1,0 +1,18 @@
+ID: my_first_cf_app
+_schema-version: '2.0'
+version: 0.0.1
+modules:
+  - name: hdb
+    type: hdb
+    path: hdb
+    requires:
+      - name: hdi_hdb
+resources:
+  - name: hdi_hdb
+    properties:
+      hdi-container-name: hana_db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service-name: hana_db
+      config:
+        schema: jl
